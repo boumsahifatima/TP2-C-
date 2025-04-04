@@ -38,6 +38,21 @@ projet::constructeur3(projet&p)
 void projet::afficher(){
     cout<<"projet :"<<nom<< "duree : "<<duree<< "budget :"<< budget<<endl;
 }
+class emplye
+{
+private:
+    char* nom;//stocker avec allocation dynamique
+    int id;
+    projet* table;//tableau dynamique
+    int nbProjet;
+    static int n;
+public:
+    employe();
+    employe(char* ch,int i,int n);
+    employe(const employe&p);
+    void aficher();
+    
+};
 
 
 int main()
