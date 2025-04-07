@@ -51,7 +51,17 @@ public:
     employe(char* ch,int i,int n);
     employe(const employe&p);
     void aficher();
-    
+    void Employe::modifier(const char* nouveauNom, int nouvelId) {
+    modifier(nouveauNom);
+    id = nouvelId;
+    };
+    void Employe::ajouterProjet(const Projet& p){
+    if (index < capaciteProjets) {
+        projets[index++] = p;
+    } else {
+        cout << " Impossible d’ajouter : capacité maximale atteinte." << endl;
+    };
+
 };
 
 
